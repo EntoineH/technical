@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./App.js"
 
 function FlashMessage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -7,7 +8,7 @@ function FlashMessage() {
     const intervalId = setInterval(() => {
       setIsVisible(prevIsVisible => !prevIsVisible);
     }, 1000);
-
+    
     return () => clearInterval(intervalId);
   }, []);
 
