@@ -16,15 +16,16 @@ code {
     monospace;
 }
 
-.image-clignote  {
-  animation-duration: .8s;
-  animation-name: clignoter;
-  animation-iteration-count: infinite;
-  transition: none;
+@keyframes vibrate {
+  0% { transform: translateY(0); }
+  10% { transform: translateY(-10px); }
+  20% { transform: translateY(10px); }
+  30% { transform: translateY(-10px); }
+  40% { transform: translateY(10px); }
+  50% { transform: translateY(0); }
+  100% { transform: translateY(0); }
 }
 
-@keyframes clignoter {
- 0%   { opacity:1; }
- 40%   {opacity:0; }
- 100% { opacity:1; }
+#screen {
+  animation: vibrate 0.5s linear infinite;
 }
