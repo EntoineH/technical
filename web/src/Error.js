@@ -14,10 +14,10 @@ function FlashMessage() {
 
   return (
     <div class ="flex" style={{
-      backgroundColor: 'red',
+      backgroundColor: isVisible ? 'red': 'white',
       padding: '20px',
       color: 'white',
-      display: isVisible ? 'block' : 'none',
+      display: 'block',
     }}>
       <p class="text-center text-2xl">UNKNOWN PERSON</p>
     </div>

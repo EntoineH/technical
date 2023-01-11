@@ -27,3 +27,34 @@ function Camera() {
 }
 
 export default Camera;
+
+// import React, { useState, useEffect } from 'react';
+
+// function Camera() {
+//   const [blob, setBlob] = useState(null);
+//   const videoRef = useRef(null);
+  
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       const response = await fetch('<your-api-gateway-endpoint>');
+//       const blob = await response.blob();
+//       setBlob(blob);
+//     };
+//     fetchData();
+//   }, []);
+
+//   useEffect(() => {
+//     if (blob && videoRef.current) {
+//       const objectUrl = URL.createObjectURL(blob);
+//       videoRef.current.src = objectUrl;
+//     }
+//   }, [blob, videoRef]);
+  
+//   return (
+//     <div>
+//       <video autoPlay playsInline ref={videoRef}></video>
+//     </div>
+//   );
+// }
+
+// export default Camera;
