@@ -2,9 +2,10 @@ import './App.css';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div class="flex h-screen">
+      <div class="m-auto w-2/4 h-3/4 border-2 border-sky-500">
+      </div>
+    </div>
   );
 }
 
